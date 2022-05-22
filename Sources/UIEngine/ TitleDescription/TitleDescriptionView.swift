@@ -8,14 +8,14 @@
 import SwiftUI
 
 @available(iOS 13.0.0, *)
-struct TitleDescriptionView: View {
+public struct TitleDescriptionView: View {
     @ObservedObject private var viewModel: TitleDescriptionViewModel
     
-    init( viewModel: TitleDescriptionViewModel) {
+    public init( viewModel: TitleDescriptionViewModel) {
         self.viewModel = viewModel
     }
     
-    var body: some View {
+    public var body: some View {
         VStack {
             
             if let decorator = viewModel.titleDecorator {

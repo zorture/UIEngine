@@ -10,7 +10,7 @@ import SwiftUI
 @available(iOS 13.0.0, *)
 public enum UIEngine {
     
-    enum TitleDescriptionGenerator {
+    public enum TitleDescriptionGenerator {
         case product(title: String, description: String)
         case pricing(title: String, description: String)
         case cart(title: String, description: String)

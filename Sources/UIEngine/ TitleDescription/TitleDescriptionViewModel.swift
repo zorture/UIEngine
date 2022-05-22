@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 13.0.0, *)
-final class TitleDescriptionViewModel: ObservableObject {
+open class TitleDescriptionViewModel: ObservableObject {
     
     @Published var titleDecorator: TextTheme?
     @Published var descriptionDecorator: TextTheme?

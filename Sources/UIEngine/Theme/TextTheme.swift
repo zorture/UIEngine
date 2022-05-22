@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 @available(iOS 13.0.0, *)
-struct TextTheme {
+public struct TextTheme {
     let title: String
     var font: Font = Font.subheadline
     var textColor: Color = Color.black
