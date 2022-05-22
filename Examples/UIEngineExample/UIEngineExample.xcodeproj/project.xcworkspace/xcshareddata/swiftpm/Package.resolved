@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "uiengine",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zorture/UIEngine.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "263a7344c75da037cacf73e3eb1e32266308aaaf"
+      }
+    }
+  ],
+  "version" : 2
+}
