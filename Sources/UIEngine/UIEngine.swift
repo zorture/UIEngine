@@ -16,7 +16,7 @@ public enum UIEngine {
         case cart(title: String, description: String)
         case custom(viewModel: TitleDescriptionViewModel)
         
-        var view: TitleDescriptionView {
+        public var view: TitleDescriptionView {
             switch self {
             case .custom(let viewModel):
                 return TitleDescriptionView(viewModel: viewModel)
@@ -25,7 +25,7 @@ public enum UIEngine {
             }
         }
         
-        var viewModel: TitleDescriptionViewModel {
+        public var viewModel: TitleDescriptionViewModel {
             switch self {
             case .product(let title, let description):
                 let titleDecorator = TextTheme(title: title,
