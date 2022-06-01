@@ -10,10 +10,17 @@ import UIEngine
 
 @main
 struct UIEngineExampleApp: App {
+  
     var body: some Scene {
         WindowGroup {
-            UIEngine.TitleDescriptionGenerator.product(title: "Apple iPhone",
-                                                       description: "6.1-inch Super Retina XDR display").view
+            VStack(alignment: .center) {
+                TitleDescriptionGenerator.product(title: "Apple iPhone",
+                                                           description: "6.1-inch Super Retina XDR display").view
+                
+               InputFieldExample()
+                    .border(.blue, width: 2)
+            }
+            .padding(20)
         }
     }
 }

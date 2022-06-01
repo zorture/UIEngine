@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9627D162847E00A00833C81 /* UIEngine in Frameworks */ = {isa = PBXBuildFile; productRef = B9627D152847E00A00833C81 /* UIEngine */; };
+		B9627D182847E54E00833C81 /* InputFieldExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9627D172847E54E00833C81 /* InputFieldExample.swift */; };
 		B9D64EF42839CF8300D68745 /* UIEngineExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D64EF32839CF8300D68745 /* UIEngineExampleApp.swift */; };
 		B9D64EF82839CF8400D68745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D64EF72839CF8400D68745 /* Assets.xcassets */; };
 		B9D64EFB2839CF8400D68745 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D64EFA2839CF8400D68745 /* Preview Assets.xcassets */; };
-		B9D64F042839D4B200D68745 /* UIEngine in Frameworks */ = {isa = PBXBuildFile; productRef = B9D64F032839D4B200D68745 /* UIEngine */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B9627D132847DF2E00833C81 /* UIEngine */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UIEngine; path = ../..; sourceTree = "<group>"; };
+		B9627D172847E54E00833C81 /* InputFieldExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldExample.swift; sourceTree = "<group>"; };
 		B9D64EF02839CF8200D68745 /* UIEngineExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIEngineExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D64EF32839CF8300D68745 /* UIEngineExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEngineExampleApp.swift; sourceTree = "<group>"; };
 		B9D64EF72839CF8400D68745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -25,19 +28,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D64F042839D4B200D68745 /* UIEngine in Frameworks */,
+				B9627D162847E00A00833C81 /* UIEngine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9627D122847DF2E00833C81 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B9627D132847DF2E00833C81 /* UIEngine */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		B9627D142847E00A00833C81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B9D64EE72839CF8200D68745 = {
 			isa = PBXGroup;
 			children = (
+				B9627D122847DF2E00833C81 /* Packages */,
 				B9D64EF22839CF8200D68745 /* UIEngineExample */,
 				B9D64EF12839CF8200D68745 /* Products */,
-				B9D64F022839D4B200D68745 /* Frameworks */,
+				B9627D142847E00A00833C81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				B9D64EF32839CF8300D68745 /* UIEngineExampleApp.swift */,
+				B9627D172847E54E00833C81 /* InputFieldExample.swift */,
 				B9D64EF72839CF8400D68745 /* Assets.xcassets */,
 				B9D64EF92839CF8400D68745 /* Preview Content */,
 			);
@@ -65,13 +85,6 @@
 				B9D64EFA2839CF8400D68745 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B9D64F022839D4B200D68745 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +104,7 @@
 			);
 			name = UIEngineExample;
 			packageProductDependencies = (
-				B9D64F032839D4B200D68745 /* UIEngine */,
+				B9627D152847E00A00833C81 /* UIEngine */,
 			);
 			productName = UIEngineExample;
 			productReference = B9D64EF02839CF8200D68745 /* UIEngineExample.app */;
@@ -122,7 +135,6 @@
 			);
 			mainGroup = B9D64EE72839CF8200D68745;
 			packageReferences = (
-				B9D64F012839D07F00D68745 /* XCRemoteSwiftPackageReference "UIEngine" */,
 			);
 			productRefGroup = B9D64EF12839CF8200D68745 /* Products */;
 			projectDirPath = "";
@@ -150,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9627D182847E54E00833C81 /* InputFieldExample.swift in Sources */,
 				B9D64EF42839CF8300D68745 /* UIEngineExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UIEngineExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "UIEngineExample/Preview\\ Content";
 				DEVELOPMENT_TEAM = 5E2GFLNUNY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UIEngineExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "UIEngineExample/Preview\\ Content";
 				DEVELOPMENT_TEAM = 5E2GFLNUNY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -352,21 +365,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		B9D64F012839D07F00D68745 /* XCRemoteSwiftPackageReference "UIEngine" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/zorture/UIEngine.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		B9D64F032839D4B200D68745 /* UIEngine */ = {
+		B9627D152847E00A00833C81 /* UIEngine */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B9D64F012839D07F00D68745 /* XCRemoteSwiftPackageReference "UIEngine" */;
 			productName = UIEngine;
 		};
 /* End XCSwiftPackageProductDependency section */
